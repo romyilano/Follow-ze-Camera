@@ -25,6 +25,14 @@ struct ARViewContainer: UIViewRepresentable {
         
         // Add the box anchor to the scene
         arView.scene.anchors.append(boxAnchor)
+      
+        let cloneBox = boxAnchor.clone(recursive: true)
+        
+        let cameraAnchor = AnchorEntity(.camera)
+        cameraAnchor.addChild(cloneBox)
+        arView.scene.addAnchor(cameraAnchor)
+        
+        cloneBox.transform.translation = [0, 0, -0.5]
         
         return arView
         
@@ -32,6 +40,9 @@ struct ARViewContainer: UIViewRepresentable {
     
     func updateUIView(_ uiView: ARView, context: Context) {}
     
+    func handleTap(_ entity: Entity?) {
+        
+    }
 }
 
 #if DEBUG
