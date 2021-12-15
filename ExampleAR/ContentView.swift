@@ -26,7 +26,8 @@ struct ARViewContainer: UIViewRepresentable {
         // Add the box anchor to the scene
         arView.scene.anchors.append(boxAnchor)
       
-        let cloneBox = boxAnchor.clone(recursive: true)
+//        let cloneBox = boxAnchor.clone(recursive: true)
+        let cloneBox = ModelEntity(mesh: MeshResource.generateBox(size: 0.05), materials: [SimpleMaterial(color: .red, isMetallic: true)])
         
         let cameraAnchor = AnchorEntity(.camera)
         cameraAnchor.addChild(cloneBox)
