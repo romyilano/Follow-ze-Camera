@@ -15,6 +15,7 @@
 		1CE2BFEF27696B3B008BB906 /* ExampleARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE2BFEE27696B3B008BB906 /* ExampleARTests.swift */; };
 		1CE2BFF927696B3C008BB906 /* ExampleARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE2BFF827696B3C008BB906 /* ExampleARUITests.swift */; };
 		1CE2BFFB27696B3C008BB906 /* ExampleARUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE2BFFA27696B3C008BB906 /* ExampleARUITestsLaunchTests.swift */; };
+		1CE2C00A2769716D008BB906 /* second.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 1CE2C0092769716D008BB906 /* second.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		1CE2BFF427696B3C008BB906 /* ExampleARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE2BFF827696B3C008BB906 /* ExampleARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleARUITests.swift; sourceTree = "<group>"; };
 		1CE2BFFA27696B3C008BB906 /* ExampleARUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleARUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1CE2C0092769716D008BB906 /* second.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = second.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				1CE2BFDD27696B3B008BB906 /* ContentView.swift */,
 				1CE2BFDF27696B3B008BB906 /* Experience.rcproject */,
 				1CE2BFE127696B3B008BB906 /* Assets.xcassets */,
+				1CE2C0092769716D008BB906 /* second.rcproject */,
 				1CE2BFE327696B3B008BB906 /* Preview Content */,
 			);
 			path = ExampleAR;
@@ -262,6 +265,7 @@
 			files = (
 				1CE2BFDE27696B3B008BB906 /* ContentView.swift in Sources */,
 				1CE2BFDC27696B3B008BB906 /* AppDelegate.swift in Sources */,
+				1CE2C00A2769716D008BB906 /* second.rcproject in Sources */,
 				1CE2BFE027696B3B008BB906 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

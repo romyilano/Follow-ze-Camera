@@ -27,11 +27,21 @@ struct ARViewContainer: UIViewRepresentable {
         arView.scene.anchors.append(boxAnchor)
       
 //        let cloneBox = boxAnchor.clone(recursive: true)
-        let cloneBox = ModelEntity(mesh: MeshResource.generateBox(size: 0.05), materials: [SimpleMaterial(color: .red, isMetallic: true)])
+//        // this won't disappear
+//        let cloneBox = ModelEntity(mesh: MeshResource.generateBox(size: 0.05), materials: [SimpleMaterial(color: .red, isMetallic: true)])
+//
+//        let cloneBox = try! second.loadDonut
+        let secondScene = try! Second.loadScene()
+        guard let donut = try! secondScene.findEntity(named: "Donut") else {
+            fatalError()
+        }
         
+        let cloneBox = donut
         let cameraAnchor = AnchorEntity(.camera)
         cameraAnchor.addChild(cloneBox)
         arView.scene.addAnchor(cameraAnchor)
+        
+        
         
         cloneBox.transform.translation = [0, 0, -0.5]
         
